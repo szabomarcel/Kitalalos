@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,10 +25,19 @@ namespace Kitalalos
 
         private void button_Bevitel_Click(object sender, EventArgs e)
         {
-            if(Program.)
+            int button= 2;
+            switch (button)
             {
-                Program.formBevitel.Show();
-            }
+                case 1:
+                    Console.WriteLine("formBevitel");
+                    break;
+                case 2:
+                    Console.WriteLine("formJatek");
+                    break;
+                default:
+                    Console.WriteLine("formKezdooldal");
+                    break;
+            }            
         }
     }
 }

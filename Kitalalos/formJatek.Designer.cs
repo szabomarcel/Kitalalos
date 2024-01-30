@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_Tipp = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox_Fajl = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox_Valasz = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -74,14 +74,14 @@
             this.textBox_Tipp.Size = new System.Drawing.Size(100, 20);
             this.textBox_Tipp.TabIndex = 3;
             // 
-            // listBox1
+            // listBox_Fajl
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(412, 30);
-            this.listBox1.TabIndex = 4;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_Fajl.FormattingEnabled = true;
+            this.listBox_Fajl.Location = new System.Drawing.Point(12, 12);
+            this.listBox_Fajl.Name = "listBox_Fajl";
+            this.listBox_Fajl.Size = new System.Drawing.Size(412, 30);
+            this.listBox_Fajl.TabIndex = 4;
+            this.listBox_Fajl.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -122,6 +122,7 @@
             this.button_Start.TabIndex = 6;
             this.button_Start.Text = "Start";
             this.button_Start.UseVisualStyleBackColor = false;
+            this.button_Start.Click += new System.EventHandler(this.button_Start_Click);
             // 
             // button_Stop
             // 
@@ -133,6 +134,7 @@
             this.button_Stop.TabIndex = 7;
             this.button_Stop.Text = "Stop";
             this.button_Stop.UseVisualStyleBackColor = false;
+            this.button_Stop.Click += new System.EventHandler(this.button_Stop_Click);
             // 
             // button_Reset
             // 
@@ -156,7 +158,7 @@
             this.Controls.Add(this.button_Stop);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBox_Fajl);
             this.Controls.Add(this.textBox_Tipp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -176,7 +178,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_Tipp;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox_Fajl;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox_Valasz;
         private System.Windows.Forms.Label label3;

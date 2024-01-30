@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kitalalos
 {
-    internal class Kitalalosdi : formBevitel
+    internal class Szavak
     {
         string rejtettszo;
         string tipp;
         string valasz;
         string bevitel;
-        public Kitalalosdi(string rejtettszo, string tipp, string valasz, string bevitel)
+        public Szavak(string rejtettszo, string tipp, string valasz, string bevitel)
         {
             this.rejtettszo = rejtettszo;
             this.tipp = tipp;
@@ -30,5 +30,6 @@ namespace Kitalalos
             public string valasz;
             public string bevitel;
         }
+        public Szavak() { }
     }
 }
